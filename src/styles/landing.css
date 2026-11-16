@@ -1,0 +1,68 @@
+/* Orfira landing v1.0.14 — scoped to public landing elements, dashboard untouched */
+:root{--orf-ink:#16191f;--orf-line:#b4bcca;--orf-blue:#4372ef;--orf-muted:#7986a0;--orf-bg:#d2def6}
+.header{height:88px;background:#fff;border-bottom:1px solid #e4e8f0;padding-inline:max(28px,calc((100vw - 1320px)/2));box-shadow:0 2px 14px #0b0c0f06}
+.landingLogo{display:inline-flex;align-items:center;flex:none;width:148px;height:56px}
+.landingLogo img{display:block;width:100%;height:auto;object-fit:contain}
+.header .nav{gap:clamp(12px,1.7vw,30px);align-items:center}
+.header .nav a{font-size:13px;font-weight:600;color:#4a5468;transition:color .2s}
+.header .nav a:hover,.header .nav a:focus-visible{color:#4372ef}
+.header .login{background:transparent;color:#16191f;border:1px solid #b4bcca;border-radius:10px;font-size:13px;padding:12px 21px;font-weight:700}
+.header .headBtn{background:#4372ef;color:white;border-color:#4372ef;border-radius:10px;padding:13px 18px}
+.header .headBtn:hover{background:#315fdb}
+.heroRef{background:linear-gradient(115deg,#edf2ff 0%,#d2def6 64%,#c4d4f6 100%);min-height:620px}
+.heroRefInner{min-height:600px;max-width:1380px;gap:30px;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr)}
+.heroCopy{padding:90px 0 64px}
+.heroCopy .eyebrow{color:#4372ef;letter-spacing:.17em}
+.heroCopy h1{font-size:clamp(42px,4.1vw,65px);font-weight:650;letter-spacing:-.055em;line-height:1.14;margin:25px 0}
+.heroCopy h1 strong{font-weight:800}
+.heroCopy>p:not(.heroMicro){font-size:16px;line-height:1.75;color:#4a5468}
+.heroCopy .btn{border-radius:10px;background:#16191f;color:#fff}
+.heroTextLink{font-weight:700;color:#315fdb}
+.heroMicro{color:#7986a0;font-size:12px}
+.heroRings.heroSingle{display:flex;justify-content:center;align-items:center;height:520px}
+.heroRings.heroSingle .heroRingCard{width:min(100%,490px);height:490px}
+.heroRingCard .ringCaption{color:#4a5468}
+.heroBottom{background:#16191f;color:#fff;font-size:10px;letter-spacing:.14em;padding:17px 32px}
+.section{padding-top:100px;padding-bottom:100px}
+.sectionLabel{color:#4372ef;letter-spacing:.16em;font-size:11px}
+.section h2,.demoSection h2,.contactSection h2{font-weight:700;letter-spacing:-.055em;color:#16191f}
+.section h2 em,.demoSection h2 em,.contactSection h2 em{font-style:normal;color:#4372ef;font-weight:700}
+.lead,.problemList p,.step p,.integration p{color:#7986a0}
+.problemList>div{border-color:#dce2ed}.problemList>div>span{color:#4372ef}
+.problemList h3{color:#16191f;font-weight:700}
+.demoSection{background:#16191f;padding:95px 0;color:#fff}
+.demoSection h2{color:#fff}.demoSection h2 em{color:#9fb8f9}
+.demoHeader p{color:#b4bcca}
+.fakeVideo,.fake3d{height:410px;background:#1c202a;border:1px solid #343d4e;border-radius:16px}
+.fakeVideo .panelTop,.fake3d .panelTop{color:#d2def6}
+.fakePlay{color:#b4bcca;gap:18px}
+.fakePlay svg{color:#9fb8f9;opacity:.65}
+.videoEmptyHint{position:absolute;bottom:25px;left:20px;right:20px;text-align:center;font-size:12px;color:#7986a0}
+.demoFoot{color:#b4bcca}.demoFoot a{color:#9fb8f9}
+.step{background:#f0f2f4;border:1px solid #e1e6ee;border-radius:12px}
+.step>span,.evidence span{color:#4372ef}
+.integrationRight>div{background:#f0f2f4;border:1px solid #e1e6ee;border-radius:12px}
+.integration .btn{border-radius:10px}
+.pricingSection,.faqSection{background:#edf2ff}
+.price{background:#fff;border:1px solid #dce3ef;border-radius:16px;box-shadow:0 5px 22px #253e7310}
+.price.featured{background:#16191f;border-color:#16191f}
+.priceTop,.priceDesc{color:#7986a0}.priceValue{color:inherit}
+.priceItems{border-color:#dce3ef}.priceItems svg{color:#4372ef}
+.price .btn{border-radius:10px}
+.evidence>div{border-color:#dce3ef}
+.faqItem{border-color:#cbd6eb}.faqItem button{color:#16191f}
+.contactSection{background:#d2def6}
+.contactSection .sectionLabel{color:#315fdb}
+.form{background:#fff;border:1px solid #c5d1e8;border-radius:16px;padding:36px;box-shadow:0 16px 40px #314d8116}
+.form h3{font-weight:750;color:#16191f}
+.form label{color:#4a5468;font-size:13px}
+.form input:not([type=checkbox]),.form textarea{background:#f7f9ff;border:1px solid #b4bcca;border-radius:8px;padding:14px}
+.form input:focus,.form textarea:focus{outline:2px solid #9fb8f9;border-color:#4372ef}
+.form .btn{background:#4372ef;color:white;border-color:#4372ef;border-radius:10px}
+.form .btn:hover{background:#315fdb}
+.footer{background:#16191f}.footer .landingLogo img{filter:brightness(0) invert(1)}
+.footerInner{min-height:160px}.footer nav a{color:#e1e6f0}
+@media(max-width:1120px){.header{gap:15px}.header .nav{gap:12px}.header .nav a{font-size:12px}.landingLogo{width:120px}.heroCopy{padding-top:65px}}
+@media(max-width:780px){.header{height:72px;padding-inline:20px}.header .nav{top:72px;background:white;box-shadow:0 18px 25px #16191f16}.header .nav a{font-size:15px;padding:5px 0}.landingLogo{width:122px}.heroRefInner{display:flex;flex-direction:column}.heroCopy{padding:45px 0 5px}.heroCopy h1{font-size:clamp(36px,7vw,56px)}.heroRings.heroSingle{height:340px;width:100%}.heroRings.heroSingle .heroRingCard{height:340px;max-width:390px}.section{padding-block:70px}.fakeVideo,.fake3d{height:320px}.form{padding:24px}}
+@media(max-width:520px){.heroCopy h1{font-size:38px}.heroCopy>p:not(.heroMicro){font-size:14px}.heroRings.heroSingle{height:270px}.heroRings.heroSingle .heroRingCard{height:270px}.header .login{padding:10px 13px}.heroBottom{font-size:9px}.footer .landingLogo{margin-bottom:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}

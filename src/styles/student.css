@@ -7,3 +7,55 @@
 .sTimelineTrack button{z-index:2}
 .sTimelineTrack button:hover span,.sTimelineTrack button:focus-visible span{background:#416df1;color:white}
 .sTimelineHead strong{font-variant-numeric:tabular-nums}
+
+/* Orfira student design system — aligned with approved teacher navigation */
+.sApp{--sBlue:#4372ef;--sDark:#16191f;--sBorder:#dce3ef;background:#d2def6;color:#16191f}
+.sSidebar{width:236px;padding:0 12px 14px;transition:width .2s ease;border-right:1px solid #e2e7f0}
+.sSidebarBrand{height:120px;position:relative;display:flex;align-items:flex-start;padding:22px 10px}
+.sSidebarBrand>img{width:122px;height:50px;object-fit:contain;object-position:left center;cursor:pointer}
+.sCollapseButton{position:absolute!important;right:-25px;top:26px;z-index:15;width:34px;height:34px!important;padding:0!important;display:grid!important;place-items:center;background:white!important;border:1px solid #dce3ef!important;box-shadow:0 2px 8px #1111;border-radius:10px!important;font-size:26px!important;color:#16191f!important}
+.sRole{font-size:10px;padding:0 10px 18px;letter-spacing:.12em;color:#7986a0}
+.sSidebar nav{gap:5px}.sSidebar button{border-radius:9px;font-size:13px;min-height:45px;padding:10px 12px;color:#4a5468;gap:13px;white-space:nowrap}
+.sSidebar nav button.selected{background:#4372ef;color:white}.sSidebar nav button.selected .sOriginalIcon{filter:brightness(0) invert(1)}
+.sOriginalIcon{width:21px;height:21px;object-fit:contain;flex-shrink:0}
+.sSidebarBottom{gap:3px}.sSidebarBottom>.sIdentity{margin-top:8px}.sIdentity{padding:13px 7px;border-top:1px solid #dce3ef}.sIdentityText{min-width:0}.sAvatar{background:#dce6ff}
+.sCollapsed .sSidebar{width:76px;padding-left:8px;padding-right:8px}.sCollapsed .sSidebarBrand{height:120px;padding:20px 6px}.sCollapsed .sSidebarBrand>img{width:40px;height:40px}.sCollapsed .sCollapseButton{right:-20px}.sCollapsed .sRole,.sCollapsed .sNavText,.sCollapsed .sIdentityText{display:none}.sCollapsed .sSidebar button{justify-content:center;padding:11px}.sCollapsed .sIdentity{justify-content:center;padding:12px 0}.sCollapsed .sAvatar{flex:none}
+.sTop{height:66px;letter-spacing:0;font-size:13px;font-weight:700;color:#16191f}.sTop button{font-size:12px;color:#7986a0}.sMain{background:#f5f7fc;min-height:calc(100vh - 66px);max-width:none;padding:38px 40px 90px}.sPageHead h1{font-size:34px;font-weight:750}.sKicker{color:#4372ef}.sCard,.sStats>div,.sTimeline,.sTaskForm{border-color:#dce3ef;border-radius:12px}.sButton{border-radius:8px}.sButton:not(.outline){background:#4372ef;border-color:#4372ef}.sSidebar button:hover:not(.selected){background:#f0f2f4}.sSectionTitle h2{font-size:20px}.sApp select{appearance:none;background:#f0f2f4 url('/design/icons/Arrow--down.svg') no-repeat right 14px center;background-size:15px;padding-right:42px;border:1px solid #dce3ef;border-radius:8px;color:#16191f}
+.sLessonGrid{grid-template-columns:1fr 1fr;gap:16px}.sLessonVideo,.sLessonModel{border-radius:12px}.sLessonVideo video,.sVideoEmpty,.sLessonRing{height:370px}.sMediaLabel{font-size:12px}.sTimeline{padding:28px}.sTaskForm{max-width:none}.sLessonActions{background:white;border:1px solid #dce3ef;border-radius:12px;margin-top:18px;padding:24px}
+@media(max-width:760px){.sSidebar{position:fixed;width:236px;z-index:100;transform:translateX(-110%)}.sSidebarOpen{transform:translateX(0)}.sCollapsed .sSidebar{width:236px}.sCollapsed .sRole,.sCollapsed .sNavText,.sCollapsed .sIdentityText{display:block}.sMain{padding:25px 16px}.sLessonGrid{grid-template-columns:1fr}}
+
+/* v1.0.12 — approved student sidebar and lesson composition */
+.sSidebarBrand{height:118px!important;align-items:flex-start!important;padding:18px 10px!important}
+.sSidebarBrand>img{width:164px!important;height:64px!important;object-fit:contain!important;object-position:left top!important}
+.sCollapsed .sSidebarBrand{height:118px!important;padding:18px 8px!important}
+.sCollapsed .sSidebarBrand>img{width:45px!important;height:45px!important;object-fit:contain!important}
+.sSidebar nav{margin-top:12px!important}.sSidebarBottom{gap:5px!important}
+.sProfileWrap{position:relative;border-top:1px solid #dce3ef;margin-top:8px}
+.sSidebar .sIdentity{width:100%;border-top:0!important;border-radius:0!important;display:flex!important;align-items:center!important;text-align:left!important;gap:11px!important;padding:15px 6px!important}
+.sSidebar .sIdentity:hover{background:#f2f5fb}.sIdentityText{display:block}.sProfilePopup{position:absolute;left:5px;bottom:calc(100% + 8px);z-index:50;width:225px;padding:15px;background:white;border:1px solid #dce3ef;border-radius:12px;box-shadow:0 12px 36px #16191f24;display:flex;flex-direction:column;gap:8px}
+.sProfilePopup small{color:#8290a6}.sSidebar .sProfilePopup button{display:flex;align-items:center;gap:10px;padding:10px;border-radius:7px;color:#16191f}
+.sCollapsed .sProfilePopup{left:58px;bottom:0}.sCollapsed .sIdentityText{display:none!important}
+.sApprovedLesson{background:#fff;border-radius:16px;padding:20px 22px 32px;min-height:calc(100vh - 115px);border:1px solid #e4e8f1}
+.sApprovedLessonTop{display:flex;justify-content:space-between;align-items:center;color:#596579;font-size:13px}.sApprovedLessonTop .sBack{margin:0;color:#4772ef}.sApprovedLesson h1{font-size:23px;font-weight:650;margin:12px 0 16px;letter-spacing:-.03em}
+.sApprovedMedia{display:grid;grid-template-columns:1.35fr 1fr;gap:8px;align-items:stretch}.sApprovedVideo,.sApprovedModel{height:clamp(300px,35vw,510px);border-radius:8px;overflow:hidden;position:relative}.sApprovedVideo{background:#0b0d10}.sApprovedVideo video{width:100%;height:100%;object-fit:contain}.sApprovedModel{background:#e7e8ed}.sApprovedModel>div{width:100%;height:100%}.sApprovedEmpty{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:white;height:100%;text-align:center;padding:25px}.sApprovedEmpty small{color:#b4bbca}
+.sApprovedInfo{display:grid;grid-template-columns:1fr auto;gap:24px;margin-top:28px}.sApprovedDescription h3{font-size:16px;margin:0 0 14px}.sApprovedDescription p{font-size:13px;line-height:1.55;margin:0 0 12px;max-width:650px}.sApprovedTimes{font-size:13px;margin-top:16px}.sApprovedTimes strong{display:block;margin-bottom:5px}.sApprovedTimes button{border:0;background:none;color:#4372ef;padding:2px 0;cursor:pointer;font-size:13px}.sApprovedActions{display:flex;align-items:flex-start;gap:9px}.sApprovedActions button{border:0;border-radius:8px;padding:15px 19px;cursor:pointer;white-space:nowrap;min-width:165px;display:flex;align-items:center;justify-content:center;gap:10px}.sAskButton{background:#f0f2f5;color:#16191f}.sDoButton{background:#4372ef;color:white}
+@media(max-width:1000px){.sApprovedInfo{grid-template-columns:1fr}.sApprovedActions{justify-content:flex-start}}
+@media(max-width:760px){.sApprovedMedia{grid-template-columns:1fr}.sApprovedLesson{padding:15px}.sApprovedMedia>div{height:300px}.sApprovedActions{flex-wrap:wrap}}
+
+/* v1.0.13: accessible read-only lesson state and responsive student navigation */
+.sDemoNotice{margin:-4px 0 14px;color:#687b9a;font-size:12px}
+.sApprovedTimes button:disabled{color:#8996ad;cursor:not-allowed;text-decoration:none}
+.sSidebar button:focus-visible,.sApprovedLesson button:focus-visible{outline:2px solid #436cf5;outline-offset:3px}
+.orfiraMissingModel{height:100%;min-height:230px;display:flex;align-items:center;justify-content:center;color:#aeb8cd;text-align:center;padding:24px}
+@media(max-width:760px){.sCollapsed .sSidebar{width:236px}.sSidebarBrand>img{max-width:100%}.sApprovedActions button{flex:1;min-width:145px}}
+
+.sApprovedVideo .orfiraLessonPlayer{height:370px;min-height:370px}.sApprovedVideo .orfiraLessonPlayerVideo{height:100%!important;min-height:0}
+
+/* v1.0.21: click the logo to expand/collapse; no arrow control. */
+.sApp .sCollapseButton{display:none!important}
+.sApp .sSidebarBrand .orfira-logo-toggle{display:flex;align-items:flex-start;justify-content:flex-start;appearance:none;border:0;background:transparent;padding:0;margin:0;cursor:pointer;width:100%;height:64px;min-height:0;border-radius:5px}
+.sApp .sSidebarBrand .orfira-logo-toggle img{display:block;width:164px;height:64px;max-width:100%;object-fit:contain;object-position:left top}
+.sCollapsed .sSidebarBrand .orfira-logo-toggle{width:45px;height:45px;justify-content:center}
+.sCollapsed .sSidebarBrand .orfira-logo-toggle img{width:45px;height:45px}
+.sApp .sSidebarBrand .orfira-logo-toggle:focus-visible{outline:2px solid #4372ef;outline-offset:3px}
+@media(max-width:760px){.sCollapsed .sSidebarBrand .orfira-logo-toggle{width:100%;height:64px;justify-content:flex-start}.sCollapsed .sSidebarBrand .orfira-logo-toggle img{width:164px;height:64px}}

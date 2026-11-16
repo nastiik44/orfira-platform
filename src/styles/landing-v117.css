@@ -1,0 +1,76 @@
+/* Orfira v1.0.17 — polish per QA screenshots. Only public landing. */
+/* Ring GLB scenes live in independent, non-overlapping canvases. */
+.orfiraLanding .heroRings { pointer-events:none; }
+.orfiraLanding .heroRingSlot { position:absolute; pointer-events:auto; display:block; isolation:isolate; }
+.orfiraLanding .heroRingSlot .heroJewelryRing { position:relative !important; inset:auto !important; width:100% !important; height:100% !important; transform:none !important; filter:drop-shadow(0 18px 19px rgba(49,68,105,.15)); }
+.orfiraLanding .heroRingSlot .heroJewelryRing canvas { touch-action:pan-y; cursor:grab; }
+.orfiraLanding .heroRingSlot .heroJewelryRing canvas:active { cursor:grabbing; }
+.orfiraLanding .heroRingSlotEternity { width:clamp(270px,28vw,420px); height:clamp(270px,28vw,420px); top:18px; right:-20px; z-index:1; transform:rotate(-17deg); }
+.orfiraLanding .heroRingSlotFiveStone { width:clamp(380px,39vw,550px); height:clamp(360px,38vw,525px); bottom:-25px; right:165px; z-index:2; transform:rotate(12deg); }
+/* Platform: legible numbered items and no clipped grid columns. */
+.orfiraLanding .twoCols { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(24px,4vw,70px); }
+.orfiraLanding .twoCols > *, .orfiraLanding .problemList, .orfiraLanding .problemList>div>div { min-width:0; }
+.orfiraLanding .problemList>div { grid-template-columns:54px minmax(0,1fr); gap:18px; border-top:1px solid #B4BCCA; padding-block:26px; }
+.orfiraLanding .problemList>div>span { color:#315fe0; font-size:20px; line-height:1.25; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:.04em; }
+.orfiraLanding .problemList h3 { font-size:clamp(17px,1.45vw,22px); line-height:1.32; overflow-wrap:break-word; }
+.orfiraLanding .problemList p { font-size:clamp(13px,1.05vw,16px); overflow-wrap:break-word; }
+/* Features: bottom alignment of the last line of text on desktop. */
+.orfiraLanding .demoHeader { display:grid; grid-template-columns:minmax(0,1fr) minmax(290px,.63fr); gap:clamp(30px,5vw,100px); align-items:end; }
+.orfiraLanding .demoHeader h2 { margin-bottom:0; }
+.orfiraLanding .demoHeader p { margin:0 0 .16em; max-width:unset; color:#4A5468; }
+/* Organization CTA, firm but without an extra color. */
+.orfiraLanding .integration .btn.dark { background:#16191F; border:1px solid #16191F; color:#fff; box-shadow:0 9px 22px rgba(22,25,31,.20); font-weight:750; min-height:58px; padding-inline:25px; transition:transform .24s ease,box-shadow .24s ease,background .24s ease; }
+.orfiraLanding .integration .btn.dark:hover { transform:translateY(-3px); background:#313c56; box-shadow:0 14px 27px rgba(22,25,31,.25); }
+.orfiraLanding .integration .btn.dark svg { transition:transform .24s ease; }
+.orfiraLanding .integration .btn.dark:hover svg { transform:translate(3px,-3px); }
+/* Steps: fine arrows, revealing after the cards enter the viewport. */
+.orfiraLanding .steps { gap:20px; }
+.orfiraLanding .step { position:relative; min-width:0; }
+.orfiraLanding .step .orfiraStepConnector { position:absolute; z-index:4; display:grid; place-items:center; top:50%; right:-29px; margin-top:-17px; width:36px; height:34px; border-radius:50%; border:1px solid #c1cff0; background:#f5f8ff; color:#4372EF; box-shadow:0 4px 13px #4372ef14; opacity:0; transform:translateX(-8px); transition:opacity .5s ease,transform .5s ease; }
+.orfiraLanding .steps.orfiraStepsVisible .step .orfiraStepConnector { opacity:1; transform:translateX(0); }
+.orfiraLanding .steps.orfiraStepsVisible .step:nth-child(2) .orfiraStepConnector { transition-delay:.22s; }
+.orfiraLanding .steps.orfiraStepsVisible .step:nth-child(3) .orfiraStepConnector { transition-delay:.44s; }
+.orfiraLanding .step:last-child .orfiraStepConnector { display:none; }
+/* Tariffs: restrained diagonal glass-like light sweep, no particles. */
+.orfiraLanding .price { position:relative; overflow:hidden; isolation:isolate; transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease; }
+.orfiraLanding .price::before { content:""; position:absolute; pointer-events:none; inset:-70% -45%; background:linear-gradient(110deg,transparent 43%,rgba(219,234,255,.0) 46%,rgba(255,255,255,.44) 50%,rgba(220,234,255,.0) 54%,transparent 57%); transform:translateX(-105%) rotate(-9deg); z-index:0; }
+.orfiraLanding .price.featured::before { background:linear-gradient(110deg,transparent 43%,rgba(255,255,255,0) 46%,rgba(180,207,255,.14) 50%,rgba(255,255,255,0) 54%,transparent 57%); }
+.orfiraLanding .price > * { position:relative; z-index:1; }
+.orfiraLanding .price:hover { transform:translateY(-5px); border-color:#9FB8F9; box-shadow:0 16px 40px rgba(50,78,144,.17); }
+.orfiraLanding .price:hover::before { animation:orfiraDiamondSweep 1.1s ease-out 1; }
+@keyframes orfiraDiamondSweep { from {transform:translateX(-105%) rotate(-9deg)} to {transform:translateX(105%) rotate(-9deg)} }
+/* Contact: remove any legacy yellow separators; improve line contrast. */
+.orfiraLanding .contactSteps { border-top:1px solid #9FB8F9; margin-top:52px; }
+.orfiraLanding .contactSteps div { border-top:0; border-bottom:1px solid #B4BCCA; padding:21px 5px; font-size:clamp(15px,1.2vw,19px); line-height:1.35; color:#16191F; font-weight:650; background:transparent; }
+.orfiraLanding .contactSteps div { display:flex; align-items:center; gap:20px; }
+.orfiraLanding .contactSteps div span { color:#315fe0; font-weight:800; letter-spacing:.05em; min-width:34px; }
+.orfiraLanding .contactSteps div strong { font-weight:650; color:#16191F; }
+@media(max-width:1100px){
+ .orfiraLanding .heroRingSlotEternity { right:-60px; top:42px; }
+ .orfiraLanding .heroRingSlotFiveStone { right:86px; bottom:-35px; }
+}
+@media(max-width:780px){
+ .orfiraLanding .heroRings { top:350px; bottom:0; }
+ .orfiraLanding .heroRingSlotEternity { width:49%; height:78%; right:-4%; top:0; transform:rotate(-13deg); }
+ .orfiraLanding .heroRingSlotFiveStone { width:58%; height:82%; right:38%; top:14%; bottom:auto; transform:rotate(11deg); }
+ .orfiraLanding .demoHeader { grid-template-columns:1fr; gap:16px; align-items:start; }
+ .orfiraLanding .demoHeader p { max-width:600px; }
+ .orfiraLanding .steps { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+ .orfiraLanding .step:nth-child(2) .orfiraStepConnector { display:none; }
+ .orfiraLanding .step .orfiraStepConnector { right:-29px; }
+}
+@media(max-width:520px){
+ .orfiraLanding .heroRings { top:460px; }
+ .orfiraLanding .heroRingSlotEternity { width:53%; height:64%; right:-5%; top:8%; }
+ .orfiraLanding .heroRingSlotFiveStone { width:65%; height:72%; right:36%; top:25%; }
+ .orfiraLanding .twoCols { grid-template-columns:1fr; }
+ .orfiraLanding .problemList>div { grid-template-columns:45px minmax(0,1fr); gap:13px; }
+ .orfiraLanding .steps { grid-template-columns:1fr; }
+ .orfiraLanding .step .orfiraStepConnector { display:none; }
+ .orfiraLanding .contactSteps { margin-top:30px; }
+}
+@media(prefers-reduced-motion:reduce){
+ .orfiraLanding .step .orfiraStepConnector { opacity:1; transform:none; transition:none; }
+ .orfiraLanding .price,.orfiraLanding .price::before,.orfiraLanding .integration .btn.dark,.orfiraLanding .integration .btn.dark svg { animation:none!important; transition:none!important; }
+ .orfiraLanding .price:hover { transform:none; }
+}

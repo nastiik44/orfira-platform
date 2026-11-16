@@ -1,0 +1,22 @@
+/* ЛЕНДИНГ — точечные изменения поверх исходного макета. Не изменяет кабинеты. */
+/* Background-optimized.webp — оригинальное фоновое изображение из материалов дизайнера. */
+body:has(.heroRef) .header{background:rgba(224,233,253,.76);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.48)}
+.heroRef{position:relative;background:#D2DEF6 url('/design/Background-optimized.webp') center center/cover no-repeat;overflow:hidden;isolation:isolate}
+.heroRef:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(211,224,250,.12) 0%,rgba(211,224,250,.02) 58%,rgba(211,224,250,.1) 100%);pointer-events:none}
+.heroRefInner{position:relative}
+.heroCopy{position:relative;z-index:2}
+.heroCopy h1{color:var(--orfira-dark-600)}
+.heroCopy .btn.dark{background:var(--orfira-dark-500);border:1px solid var(--orfira-dark-500);transition:transform .2s,box-shadow .2s}
+.heroCopy .btn.dark:hover{transform:translateY(-2px);box-shadow:0 12px 25px #16191f29}
+.heroRings.heroSingle .heroRingCard{background:transparent;border:0;box-shadow:none}
+.heroRingCard canvas{cursor:grab}
+.heroRingCard canvas:active{cursor:grabbing}
+.heroBottom{border-top:1px solid #fff5}
+:where(.header,.footer,.heroRef,.section,.demoSection,.contactSection) a:focus-visible,
+:where(.header,.footer,.heroRef,.section,.demoSection,.contactSection) button:focus-visible{outline:3px solid var(--orfira-primary-300);outline-offset:3px}
+@media(max-width:780px){.heroRef{background-position:53% center}.heroRef:before{background:linear-gradient(180deg,#d2def6a6,transparent)}.heroRefInner{padding-bottom:24px}}
+@media(prefers-reduced-motion:reduce){.heroCopy .btn.dark{transition:none}}
+
+/* Фон относится только к публичному лендингу; экраны кабинетов остаются без него. */
+.landingLogo img{object-fit:contain}
+@media(max-width:1100px){.heroRefInner{grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr)}.heroCopy h1{font-size:clamp(39px,4.2vw,59px)}}
