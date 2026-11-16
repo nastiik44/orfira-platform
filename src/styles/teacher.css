@@ -1,0 +1,244 @@
+/* Orfira v1.0.1 — teacher sidebar rebuilt from the supplied two-state mockups. */
+.orfira-v101{--orfira-blue:#4372EF;--orfira-bg:#D2DEF6;--orfira-ink:#16191F;--orfira-muted:#7986A0;--orfira-line:#B4BCCA;background:var(--orfira-bg)}
+.orfira-v101 .tSide{width:220px;min-width:220px;transition:width .22s,min-width .22s;background:white;display:flex;flex-direction:column;overflow:hidden;padding:0 12px}
+.orfira-v101 .orfira-side-brand{height:126px;display:flex;align-items:flex-start;justify-content:space-between;padding:23px 6px 0;gap:6px}
+.orfira-v101 .tBrand{padding:0;border:0;background:transparent;min-width:0;display:flex;align-items:center}
+.orfira-v101 .tBrand img{width:115px;max-height:54px;object-fit:contain;object-position:left center}
+.orfira-v101 .orfira-side-toggle{border:1px solid #e6e9f0;background:white;border-radius:7px;width:25px;height:27px;display:grid;place-items:center;cursor:pointer;flex:none}
+.orfira-v101 .orfira-side-toggle img{width:13px;height:13px}
+.orfira-v101 .tNav{display:flex;flex-direction:column;gap:5px;margin:0}
+.orfira-v101 .tNav button{display:flex;align-items:center;gap:13px;min-height:44px;padding:10px 13px;border-radius:8px;white-space:nowrap;font-size:13px;font-weight:500;color:#4A5468}
+.orfira-v101 .tNav button.active{background:linear-gradient(105deg,#4372EF,#5883F5);color:white}
+.orfira-v101 .tNav button:hover:not(.active){background:#F0F2F4}
+.orfira-v101 .orfira-nav-icon{width:19px;height:19px;object-fit:contain;flex:none}
+.orfira-v101 .tNav button.active .orfira-nav-icon{filter:brightness(0) invert(1)}
+.orfira-v101 .orfira-side-action{padding:14px 0;border-top:1px solid #e1e5eb;margin-top:14px}
+.orfira-v101 .orfira-side-action button{width:100%;height:45px;border:0;border-radius:8px;background:#16191F;color:white;display:flex;align-items:center;justify-content:center;gap:13px;cursor:pointer;font:inherit;font-size:12px}
+.orfira-v101 .orfira-side-action img{width:17px;height:17px;filter:brightness(0) invert(1)}
+.orfira-v101 .orfira-side-utility{margin-top:auto;border-top:1px solid #e1e5eb;padding-top:12px}
+.orfira-v101 .tSideBottom{margin-top:10px}
+.orfira-v101 .tProfile{border-top:1px solid #e1e5eb}
+.orfira-v101.orfira-sidebar-compact .tSide{width:76px;min-width:76px;padding:0 10px}
+.orfira-v101.orfira-sidebar-compact .orfira-side-brand{height:126px;flex-direction:column;align-items:center;justify-content:flex-start;gap:13px;padding:20px 0 0}
+.orfira-v101.orfira-sidebar-compact .tBrand img{width:33px;height:33px}
+.orfira-v101.orfira-sidebar-compact .orfira-side-toggle img{transform:rotate(180deg)}
+.orfira-v101.orfira-sidebar-compact .tNav button{justify-content:center;padding:10px}
+.orfira-v101.orfira-sidebar-compact .tNav button span,.orfira-v101.orfira-sidebar-compact .orfira-side-action button span,.orfira-v101.orfira-sidebar-compact .tSideBottom>button span,.orfira-v101.orfira-sidebar-compact .tProfile div{display:none}
+.orfira-v101.orfira-sidebar-compact .orfira-side-action button{width:46px;margin:auto}
+.orfira-v101.orfira-sidebar-compact .tSideBottom>button{justify-content:center}
+.orfira-v101.orfira-sidebar-compact .tProfile{justify-content:center}
+.orfira-v101 .tMain{min-width:0;flex:1}
+@media(max-width:720px){.orfira-v101 .tSide{width:76px;min-width:76px;padding:0 10px}.orfira-v101 .tNav button span,.orfira-v101 .orfira-side-action button span,.orfira-v101 .tSideBottom>button span,.orfira-v101 .tProfile div{display:none}.orfira-v101 .tNav button{justify-content:center;padding:10px}.orfira-v101 .orfira-side-action button{width:46px;margin:auto}.orfira-v101 .orfira-side-brand{height:126px;flex-direction:column;align-items:center;gap:10px;padding:20px 0 0}.orfira-v101 .tBrand img{width:40px}.orfira-v101 .tProfile{justify-content:center}}
+
+/* v1.0.2: precise two-state sidebar corrections from designer's comparison */
+.orfira-v101 .tSide{padding:0 12px;overflow:visible;box-sizing:border-box}
+.orfira-v101 .orfira-side-brand{height:116px;align-items:flex-start;padding:16px 5px 0;position:relative}
+.orfira-v101 .tBrand{margin:0;overflow:hidden;max-width:145px}
+.orfira-v101 .tBrand img{width:112px;height:auto;max-height:42px;object-fit:contain;object-position:left top}
+.orfira-v101 .orfira-side-toggle{position:absolute;top:18px;right:0;width:25px;height:27px}
+.orfira-v101 .tNav{gap:2px}
+.orfira-v101 .tNav button{min-height:43px;padding:10px 12px;gap:12px}
+.orfira-v101 .orfira-side-action{margin-top:11px;padding:11px 0;border-top:1px solid #e1e5eb}
+.orfira-v101 .orfira-side-utility{margin-top:auto;padding-top:12px;gap:2px;border-top:0}
+.orfira-v101 .tSideBottom{margin-top:12px;border-top:1px solid #e1e5eb;padding-top:9px;padding-bottom:13px;position:relative}
+.orfira-v101 .tProfile.orfira-profile-trigger{border:0;display:flex;width:100%;align-items:center;gap:9px;padding:8px 6px;text-align:left;border-radius:8px;background:transparent;cursor:pointer;color:#16191F}
+.orfira-v101 .tProfile.orfira-profile-trigger:hover{background:#f0f2f4}
+.orfira-v101 .orfira-avatar{flex:none;display:grid;place-items:center;background:#16191F;color:#fff;border-radius:50%;width:36px;height:36px;font-size:0}
+.orfira-v101 .orfira-profile-menu{position:absolute;bottom:76px;left:0;right:0;background:white;border:1px solid #dfe4ed;box-shadow:0 8px 28px #16191f18;border-radius:8px;padding:5px;z-index:20}
+.orfira-v101 .orfira-profile-menu button{display:flex;align-items:center;gap:9px;width:100%;padding:11px;background:transparent;border:0;border-radius:6px;color:#16191F;font-size:12px;cursor:pointer}
+.orfira-v101 .orfira-profile-menu button:hover{background:#f0f2f4}
+.orfira-v101.orfira-sidebar-compact .orfira-side-brand{height:116px;align-items:center;padding:16px 0 0;gap:9px}
+.orfira-v101.orfira-sidebar-compact .tBrand{max-width:100%;justify-content:center}
+.orfira-v101.orfira-sidebar-compact .tBrand img{width:35px;height:35px;max-height:none;object-position:center}
+.orfira-v101.orfira-sidebar-compact .orfira-side-toggle{position:static;width:25px;height:25px}
+.orfira-v101.orfira-sidebar-compact .tProfile.orfira-profile-trigger{justify-content:center}
+.orfira-v101.orfira-sidebar-compact .orfira-profile-menu{left:50px;right:auto;bottom:15px;width:150px}
+@media(max-width:720px){.orfira-v101 .orfira-side-brand{height:116px;align-items:center;padding:16px 0 0;gap:9px}.orfira-v101 .tBrand img{width:35px;height:35px;max-height:none}.orfira-v101 .orfira-side-toggle{position:static}.orfira-v101 .tProfile.orfira-profile-trigger{justify-content:center}}
+
+/* v1.0.3: side-mounted collapse control, stable logo, visible compact profile */
+.orfira-v101 .tSide{position:relative;overflow:visible}
+.orfira-v101 .orfira-side-brand{height:104px;display:flex;align-items:flex-start;justify-content:flex-start;padding:18px 7px 0;overflow:visible}
+.orfira-v101 .tBrand{overflow:visible;max-width:none;flex:none}
+.orfira-v101 .tBrand img{display:block;width:115px;height:40px;max-height:none;object-fit:contain;object-position:left center}
+.orfira-v101 .orfira-side-toggle{position:absolute;top:27px;right:-14px;z-index:40;width:28px;height:28px;border:1px solid #dce2ee;border-radius:8px;box-shadow:0 2px 6px #16191f12;background:#fff}
+.orfira-v101.orfira-sidebar-compact .orfira-side-brand{height:104px;display:flex;align-items:flex-start;justify-content:center;padding:18px 0 0}
+.orfira-v101.orfira-sidebar-compact .tBrand{width:100%;max-width:none;display:flex;justify-content:center;overflow:visible}
+.orfira-v101.orfira-sidebar-compact .tBrand img{width:46px;height:46px;max-height:none;object-fit:contain;object-position:center}
+.orfira-v101.orfira-sidebar-compact .orfira-side-toggle{position:absolute;top:27px;right:-14px;width:28px;height:28px}
+.orfira-v101.orfira-sidebar-compact .tSideBottom>button span.orfira-avatar{display:grid!important;width:36px;height:36px;min-width:36px;flex:none}
+.orfira-v101.orfira-sidebar-compact .tProfile.orfira-profile-trigger{display:flex;justify-content:center;align-items:center;padding:8px 0;min-height:55px}
+.orfira-v101.orfira-sidebar-compact .tSideBottom{padding-bottom:18px}
+@media(max-width:720px){.orfira-v101 .orfira-side-toggle{position:absolute;top:27px;right:-14px}.orfira-v101 .tSideBottom>button span.orfira-avatar{display:grid!important}}
+
+/* v1.0.4: toggle protrudes outside the sidebar, per annotated mockup. */
+.orfira-v101 .orfira-side-toggle,
+.orfira-v101.orfira-sidebar-compact .orfira-side-toggle {
+  right: -19px;
+  top: 27px;
+  width: 28px;
+  height: 28px;
+  z-index: 50;
+}
+@media(max-width:720px) {
+  .orfira-v101 .orfira-side-toggle { right: -19px; }
+}
+
+/* v1.0.5 — teacher inner pages, based on Orfira supplied design system. */
+.orfira-v101 .orfira-disciplines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.orfira-v101 .orfira-discipline-card{text-align:left;background:white;border:1px solid #e0e5ef;border-radius:12px;padding:24px;min-height:190px;cursor:pointer;color:#16191F;display:flex;flex-direction:column;align-items:flex-start}
+.orfira-v101 .orfira-discipline-card:hover{border-color:#4372EF;box-shadow:0 6px 24px #4372ef12}
+.orfira-v101 .orfira-discipline-card small,.orfira-v101 .orfira-overline{color:#4372EF;letter-spacing:.08em;font-weight:700;font-size:11px}
+.orfira-v101 .orfira-discipline-card h2{font-size:20px;line-height:1.35;margin:16px 0 8px}
+.orfira-v101 .orfira-discipline-card p{font-size:13px;color:#7986A0;margin:0 0 16px}
+.orfira-v101 .orfira-discipline-card span{margin-top:auto;color:#4372EF;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px}
+.orfira-v101 .orfira-back-link{display:flex;gap:8px;align-items:center;color:#4372EF;border:0;background:transparent;cursor:pointer;margin-bottom:24px}
+.orfira-v101 .orfira-section-head{display:flex;align-items:center;gap:12px;margin:30px 0 12px}
+.orfira-v101 .orfira-section-head h2{margin:0}
+.orfira-v101 .orfira-section-head>span{color:#7986A0}
+.orfira-v101 .orfira-section-head .tLink{margin-left:auto}
+.orfira-v101 .orfira-lesson-list{display:flex;flex-direction:column;gap:10px}
+.orfira-v101 .orfira-lesson-row{background:#fff;border:1px solid #e0e5ef;border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:18px}
+.orfira-v101 .orfira-number{display:grid;place-items:center;flex:none;width:42px;height:42px;background:#f0f2f4;border-radius:8px;color:#4372EF;font-weight:700}
+.orfira-v101 .orfira-lesson-row>div:nth-child(2){min-width:0;flex:1}
+.orfira-v101 .orfira-lesson-row h3{font-size:15px;margin:0 0 5px}
+.orfira-v101 .orfira-lesson-row p{font-size:12px;color:#7986A0;margin:0}
+.orfira-v101 .orfira-lesson-row>button{border:0;background:transparent;color:#4372EF;display:flex;align-items:center;gap:5px;cursor:pointer}
+.orfira-v101 .orfira-status{font-size:12px;border-radius:20px;padding:6px 10px;background:#F0F2F4;color:#4A5468}
+.orfira-v101 .orfira-status.published{background:#E9F5E9;color:#236b28}
+.orfira-v101 .orfira-student-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.orfira-v101 .orfira-student-summary>div{background:white;border:1px solid #e0e5ef;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.orfira-v101 .orfira-student-summary strong{font-size:30px;color:#16191F}
+.orfira-v101 .orfira-student-summary span{font-size:13px;color:#7986A0}
+.orfira-v101 .orfira-table-wrap{background:white;border-radius:12px;overflow-x:auto;border:1px solid #e0e5ef}
+.orfira-v101 .orfira-table-wrap .tTable{margin:0}
+.orfira-v101 .orfira-student-avatar{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#D2DEF6;color:#4372EF;margin-right:10px;font-size:12px;font-weight:700}
+.orfira-v101 .tFilters select{border:1px solid #d9e0ec;background:#fff;border-radius:8px;padding:10px 14px;color:#4A5468}
+@media(max-width:760px){.orfira-v101 .orfira-disciplines{grid-template-columns:1fr}.orfira-v101 .orfira-lesson-row{flex-wrap:wrap}.orfira-v101 .orfira-student-summary{grid-template-columns:1fr}}
+/* v1.0.6: faithful layout hierarchy from teacher dashboard and lesson editor references */
+.orfira-v101{background:#d2def6}
+.orfira-v101 .tMain{background:#d2def6}
+.orfira-v101 .tContent{background:#fff;border-radius:14px;margin:14px;padding:18px 16px 22px;min-height:calc(100vh - 100px)}
+.orfira-v101 .orfira-home-ref h2{font-size:18px;font-weight:600;margin:32px 0 12px}
+.orfira-v101 .orfira-home-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.orfira-v101 .orfira-home-intro h1{font-size:21px;margin:0 0 5px;font-weight:650}
+.orfira-v101 .orfira-home-intro p{margin:0;color:#6d7480;font-size:12px}
+.orfira-v101 .orfira-home-badges{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:5px}
+.orfira-v101 .orfira-home-badges span{background:#f0f2f4;padding:9px 12px;border-radius:5px;font-size:11px;white-space:nowrap}
+.orfira-v101 .orfira-home-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.orfira-v101 .orfira-home-actions>button{display:flex;align-items:center;gap:14px;background:white;border:1px solid #c8cbd2;border-radius:10px;padding:11px;text-align:left;cursor:pointer;min-height:66px;font-size:14px}
+.orfira-v101 .orfira-home-actions>button>svg:last-child{margin-left:auto;width:18px;color:#6d7480}
+.orfira-v101 .orfira-action-icon{background:#4372ef;border-radius:6px;width:40px;height:40px;flex:none;display:grid;place-items:center;color:white}
+.orfira-v101 .orfira-action-icon img{width:22px;height:22px;filter:brightness(0) invert(1)}
+.orfira-v101 .orfira-action-icon svg{width:21px}
+.orfira-v101 .orfira-home-attention{display:grid;grid-template-columns:1fr 1fr 1fr 1.45fr;gap:7px}
+.orfira-v101 .orfira-home-attention>button{min-width:0;position:relative;min-height:84px;border:1px solid #c8cbd2;border-radius:10px;background:#fff;padding:12px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:8px}
+.orfira-v101 .orfira-home-attention strong{font-size:25px;font-weight:550}
+.orfira-v101 .orfira-home-attention strong.orfira-draft-label{font-size:13px;margin-top:5px}
+.orfira-v101 .orfira-home-attention span{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:90%}
+.orfira-v101 .orfira-home-attention svg{position:absolute;right:10px;top:12px;width:16px;color:#6d7480}
+.orfira-v101 .orfira-home-section-link{border:0;background:transparent;font-size:18px;font-weight:600;display:flex;align-items:center;gap:8px;padding:0;margin:32px 0 12px;cursor:pointer}
+.orfira-v101 .orfira-home-disciplines{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.orfira-v101 .orfira-home-disciplines button{background:#fff;border:1px solid #c8cbd2;border-radius:10px;padding:16px;text-align:left;display:flex;flex-direction:column;gap:10px;cursor:pointer}
+.orfira-v101 .orfira-home-disciplines strong{font-size:14px;line-height:1.3}.orfira-v101 .orfira-home-disciplines small{color:#6d7480;font-size:11px}
+.orfira-v101 .orfira-home-table{overflow:auto;border:1px solid #c8cbd2;border-radius:9px}
+.orfira-v101 .orfira-home-table table{border-collapse:collapse;width:100%;font-size:12px}
+.orfira-v101 .orfira-home-table th{background:#4a556c;color:#fff;font-weight:400;padding:13px;border-right:1px solid #6d7587}
+.orfira-v101 .orfira-home-table td{padding:12px;border:1px solid #c8cbd2;text-align:center}
+.orfira-v101 .orfira-empty-works{color:#7d879a}
+.orfira-v101 .orfira-work-status{background:#e4f3e7;padding:5px 12px;border-radius:20px}.orfira-v101 .orfira-work-status.waiting{background:#f8dedf}
+.orfira-v101 .orfira-lesson-ref{padding:0 0 12px}
+.orfira-v101 .orfira-lesson-toolbar{display:flex;align-items:center;gap:8px;min-width:0}
+.orfira-v101 .orfira-lesson-toolbar>input{width:185px;min-width:100px;border:0;background:transparent;font-size:18px;font-weight:600;padding:8px 0;outline-color:#4372ef}
+.orfira-v101 .orfira-lesson-toolbar>select{border:1px solid #222;background:#fff;border-radius:4px;padding:10px;max-width:230px}
+.orfira-v101 .orfira-lesson-edit-icon{background:#4372ef;border:0;border-radius:4px;padding:8px;min-width:30px;min-height:30px}.orfira-v101 .orfira-lesson-edit-icon img{width:15px;filter:brightness(0) invert(1)}
+.orfira-v101 .orfira-lesson-save{display:flex;gap:8px;margin-left:auto}.orfira-v101 .orfira-lesson-save button{display:flex;align-items:center;gap:8px;border:0;border-radius:5px;padding:12px 14px;background:#f0f2f4;cursor:pointer;white-space:nowrap}.orfira-v101 .orfira-lesson-save button:last-child{background:#4372ef;color:white}
+.orfira-v101 .orfira-lesson-settings{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:34px 0 30px}
+.orfira-v101 .orfira-lesson-settings h3{font-size:14px;font-weight:500;margin:0 0 12px}.orfira-v101 .orfira-group-chips{display:flex;flex-wrap:wrap;gap:7px}
+.orfira-v101 .orfira-group-chips button{border:1px solid transparent;background:#f0f2f4;border-radius:4px;padding:11px 16px;cursor:pointer}.orfira-v101 .orfira-group-chips button.selected{border-color:#4372ef;background:#eaf0ff;color:#3766df}
+.orfira-v101 .orfira-assign-button,.orfira-v101 .orfira-add-point{display:flex;align-items:center;gap:12px;border:0;background:#4372ef;color:#fff;padding:11px 16px;border-radius:5px;cursor:pointer}
+.orfira-v101 .orfira-lesson-tabs{display:flex;gap:34px;margin:0 0 24px}.orfira-v101 .orfira-lesson-tabs button{font-size:18px;border:0;border-bottom:2px solid transparent;background:none;padding:5px 0;cursor:pointer}.orfira-v101 .orfira-lesson-tabs button.active{border-color:#16191f}
+.orfira-v101 .orfira-lesson-media{display:grid;grid-template-columns:1.4fr 1fr;gap:8px}
+.orfira-v101 .orfira-editor-video-box,.orfira-v101 .orfira-editor-model-box{position:relative;background:#e3e9f8;min-height:330px;aspect-ratio:1.45;overflow:hidden;border-radius:7px}
+.orfira-v101 .orfira-editor-video{display:block;width:100%;height:100%;object-fit:contain;background:#111}
+.orfira-v101 .orfira-editor-empty{height:100%;min-height:330px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;color:#7c8fb3;text-align:center}
+.orfira-v101 .orfira-editor-empty strong{font-size:14px}.orfira-v101 .orfira-editor-empty span{font-size:12px}
+.orfira-v101 .orfira-editor-model-box>div:first-child{height:100%;min-height:330px}
+.orfira-v101 .orfira-media-upload{position:absolute;right:10px;bottom:10px;display:flex;align-items:center;gap:7px;background:#fff;border:1px solid #e2e5ec;border-radius:5px;padding:9px 11px;font-size:12px;cursor:pointer;z-index:10}
+.orfira-v101 .orfira-media-upload input{display:none}.orfira-v101 .orfira-media-hint{font-size:11px;color:#7d879a;margin:9px 0 26px}
+.orfira-v101 .orfira-editor-rows{display:flex;flex-direction:column;gap:9px}.orfira-v101 .orfira-stage-row{display:flex;gap:8px;align-items:center}
+.orfira-v101 .orfira-stage-row>span:first-child{width:18px;flex:none}.orfira-v101 .orfira-stage-row input{background:#f0f2f4;border:1px solid transparent;border-radius:5px;padding:13px 15px;min-width:0}
+.orfira-v101 .orfira-stage-row input:nth-child(2){flex:1}.orfira-v101 .orfira-stage-row input:nth-child(3){width:78px;text-align:center}.orfira-v101 .orfira-stage-row input:focus{outline:0;border-color:#4372ef}
+.orfira-v101 .orfira-remove-stage{background:#f9e1e4;color:#17191f;border:0;border-radius:5px;width:40px;height:40px;font-size:23px;cursor:pointer}
+.orfira-v101 .orfira-add-point{margin-left:26px;margin-top:6px}.orfira-v101 .orfira-description-input{width:100%;min-height:145px;padding:16px;background:#f0f2f4;border:1px solid #d9dfe8;border-radius:6px;resize:vertical}
+.orfira-v101 .orfira-spot-note{font-size:13px;color:#7986a0}.orfira-v101 .orfira-spot-row input:nth-child(4){flex:1}
+@media(max-width:1000px){.orfira-v101 .orfira-home-intro{flex-direction:column}.orfira-v101 .orfira-home-badges{justify-content:flex-start}.orfira-v101 .orfira-home-attention{grid-template-columns:repeat(2,1fr)}.orfira-v101 .orfira-lesson-media{grid-template-columns:1fr}.orfira-v101 .orfira-lesson-toolbar{flex-wrap:wrap}.orfira-v101 .orfira-lesson-save{margin-left:0}}
+@media(max-width:650px){.orfira-v101 .orfira-home-actions,.orfira-v101 .orfira-home-disciplines,.orfira-v101 .orfira-lesson-settings{grid-template-columns:1fr}.orfira-v101 .orfira-home-attention{grid-template-columns:1fr 1fr}}
+
+/* v1.0.7: aligned lesson media panels and stage controls */
+.orfira-v101 .orfira-lesson-media{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:stretch;gap:8px}
+.orfira-v101 .orfira-editor-video-box,.orfira-v101 .orfira-editor-model-box{height:clamp(340px,34vw,510px);min-height:0;aspect-ratio:auto;align-self:stretch;box-sizing:border-box}
+.orfira-v101 .orfira-editor-model-box .orfira3d,.orfira-v101 .orfira-editor-model-box>div:first-child{height:100%;min-height:0}
+.orfira-v101 .orfira-editor-video-box .orfira-editor-empty{height:100%;min-height:0;box-sizing:border-box;padding:28px}
+.orfira-v101 .orfira-editor-video-box .orfira-editor-video{height:100%;width:100%;object-fit:contain}
+.orfira-v101 .orfira-lesson-toolbar>input{flex:0 1 185px}
+.orfira-v101 .orfira-lesson-edit-icon{display:flex;align-items:center;justify-content:center;flex:0 0 32px;width:32px;height:32px;padding:0}
+.orfira-v101 .orfira-stage-row .orfira-time-dash{width:auto;flex:none;color:#181b22;font-weight:600}
+.orfira-v101 .orfira-stage-row input:nth-child(5){width:78px;text-align:center;flex:none}
+.orfira-v101 .orfira-stage-row input:nth-child(3){flex:none}
+.orfira-v101 .orfira-stage-row .orfira-remove-stage{flex:none}
+.orfira-v101 .orfira-lesson-save button{min-height:42px;justify-content:center}
+@media(max-width:1000px){.orfira-v101 .orfira-lesson-media{grid-template-columns:1fr 1fr}.orfira-v101 .orfira-editor-video-box,.orfira-v101 .orfira-editor-model-box{height:360px}}
+@media(max-width:700px){.orfira-v101 .orfira-lesson-media{grid-template-columns:1fr}.orfira-v101 .orfira-editor-video-box,.orfira-v101 .orfira-editor-model-box{height:320px}.orfira-v101 .orfira-stage-row{flex-wrap:wrap}}
+
+/* Orfira 1.0.8 — stage controls and task editor */
+.orfira-v101 .orfira-stage-model-tools{position:absolute;top:10px;left:10px;right:10px;z-index:8;display:flex;flex-wrap:wrap;gap:6px;pointer-events:none}
+.orfira-v101 .orfira-stage-model-tools button,.orfira-v101 .orfira-stage-model-tools label{pointer-events:auto;display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border:1px solid #dce3ef;border-radius:6px;background:#fff;color:#171a22;font:inherit;font-size:11px;cursor:pointer}
+.orfira-v101 .orfira-stage-model-tools input{display:none}
+.orfira-v101 .orfira-stage-selected>input:first-of-type{outline:1px solid #4372ef}
+.orfira-v101 .orfira-stage-comment{margin:6px 0;color:#566682;font-size:12px}
+.orfira-v101 .orfira-task-ref{background:#fff;border-radius:13px;padding:18px 18px 26px;min-height:70vh}
+.orfira-v101 .orfira-task-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.orfira-v101 .orfira-task-toolbar>input{font-size:18px;font-weight:600;min-width:180px;flex:1;border:0;background:transparent;outline-color:#4372ef;padding:10px 0}
+.orfira-v101 .orfira-task-toolbar select{max-width:260px;border:1px solid #d7deea;border-radius:6px;padding:10px;background:white}
+.orfira-v101 .orfira-task-actions{display:flex;gap:8px;margin-left:auto}
+.orfira-v101 .orfira-task-actions button{display:flex;align-items:center;gap:7px;border:0;border-radius:6px;background:#eef0f4;padding:12px 14px;cursor:pointer;white-space:nowrap}
+.orfira-v101 .orfira-task-actions button:last-child{background:#4372ef;color:#fff}
+.orfira-v101 .orfira-task-settings{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin:40px 0 34px}
+.orfira-v101 .orfira-task-settings h3{font-size:14px;font-weight:500;margin:0 0 12px}
+.orfira-v101 .orfira-task-settings select,.orfira-v101 .orfira-task-settings input{width:100%;max-width:300px;padding:11px;border:1px solid #dce2eb;border-radius:6px;background:#f1f3f6;box-sizing:border-box}
+.orfira-v101 .orfira-task-section-title{display:flex;align-items:center;gap:12px;margin-bottom:15px}.orfira-v101 .orfira-task-section-title h2{font-size:21px;margin:0}.orfira-v101 .orfira-task-section-title span{color:#8795af}
+.orfira-v101 .orfira-task-question{border:1px solid #e1e6ef;border-radius:9px;padding:18px;margin-bottom:12px;background:#fff}
+.orfira-v101 .orfira-task-question-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}.orfira-v101 .orfira-task-question-header strong{flex:1}.orfira-v101 .orfira-task-question-header select{border:1px solid #dce2eb;border-radius:6px;padding:9px;background:#f1f3f6}.orfira-v101 .orfira-task-question-header button{border:0;background:#f9e2e5;border-radius:6px;padding:8px;cursor:pointer}
+.orfira-v101 .orfira-task-question-text,.orfira-v101 .orfira-task-question textarea{width:100%;box-sizing:border-box;border:1px solid #dce2eb;border-radius:6px;padding:13px;font:inherit;margin-bottom:14px}
+.orfira-v101 .orfira-task-options{display:flex;flex-direction:column;gap:9px}.orfira-v101 .orfira-task-options label{display:flex;align-items:center;gap:12px}.orfira-v101 .orfira-task-options label>input:last-child{flex:1;border:0;background:#f1f3f6;border-radius:6px;padding:12px;font:inherit;min-width:0}.orfira-v101 .orfira-task-options small{color:#8390a9}
+.orfira-v101 .orfira-task-add-option{align-self:flex-start;background:transparent;border:0;color:#4372ef;display:flex;gap:7px;align-items:center;cursor:pointer;padding:10px 0}
+.orfira-v101 .orfira-task-add-question{background:#4372ef;border:0;border-radius:6px;color:white;padding:13px 18px;display:flex;align-items:center;gap:12px;cursor:pointer}.orfira-v101 .orfira-task-3d-note{background:#e7edfc;border-radius:6px;padding:18px;color:#61769c}
+@media(max-width:900px){.orfira-v101 .orfira-task-settings{grid-template-columns:1fr}.orfira-v101 .orfira-task-actions{margin-left:0}}
+
+/* v1.0.9 — compact stage tools, no stretched overlays; consistent Orfira selects */
+.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools{position:absolute!important;top:12px!important;left:12px!important;right:12px!important;bottom:auto!important;width:calc(100% - 24px)!important;height:auto!important;min-height:0!important;max-height:44px;display:flex!important;flex-flow:row nowrap!important;align-items:flex-start!important;justify-content:flex-start!important;gap:6px!important;z-index:15;overflow:visible;pointer-events:none}
+.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>button,.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>label{position:static!important;inset:auto!important;display:inline-flex!important;flex:0 0 auto!important;width:auto!important;max-width:none!important;height:36px!important;min-height:36px!important;max-height:36px!important;align-items:center!important;justify-content:center!important;white-space:nowrap!important;padding:0 10px!important;margin:0!important;box-sizing:border-box!important;border:1px solid #e0e5ef!important;border-radius:6px!important;background:#fff!important;color:#171a22!important;font:500 11px Manrope,Arial,sans-serif!important;line-height:1!important;cursor:pointer;box-shadow:0 2px 8px #0002;pointer-events:auto}
+.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>button:hover,.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>label:hover{background:#e9efff!important;border-color:#4372ef!important}
+.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools input{display:none!important}
+.orfira-v101 .orfira-lesson-toolbar>select,.orfira-v101 .orfira-task-toolbar select,.orfira-v101 .orfira-task-settings select,.orfira-v101 .orfira-task-question-header select{appearance:none;-webkit-appearance:none;min-height:42px;border:1px solid #dce3ef!important;border-radius:7px!important;background-color:#f0f2f5!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23343c4b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:right 12px center!important;padding:10px 38px 10px 14px!important;color:#1a1d25!important;font:500 13px Manrope,Arial,sans-serif!important;cursor:pointer;box-shadow:none!important}
+.orfira-v101 .orfira-lesson-toolbar>select:focus,.orfira-v101 .orfira-task-toolbar select:focus,.orfira-v101 .orfira-task-settings select:focus,.orfira-v101 .orfira-task-question-header select:focus{outline:2px solid #4372ef;outline-offset:1px}
+.orfira-v101 .orfira-task-toolbar>input,.orfira-v101 .orfira-lesson-toolbar>input{font-family:Manrope,Arial,sans-serif!important}
+@media(max-width:900px){.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools{max-height:none;flex-wrap:wrap!important}.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>button,.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>label{font-size:10px!important;padding:0 7px!important}}
+
+/* v1.0.10 — lesson editor alignment and provided design icons */
+.orfira-v101 .orfira-lesson-toolbar{display:grid!important;grid-template-columns:minmax(160px,1fr) minmax(210px,330px) auto!important;gap:12px!important;align-items:center!important}
+.orfira-v101 .orfira-lesson-toolbar>input{width:100%!important;max-width:none!important;min-width:0!important;flex:none!important}
+.orfira-v101 .orfira-lesson-toolbar>select{width:100%!important;max-width:none!important;min-width:0!important}
+.orfira-v101 .orfira-lesson-save{margin-left:0!important;justify-self:end!important}
+.orfira-v101 .orfira-lesson-settings{grid-template-columns:minmax(0,1fr) auto!important;gap:12px!important}
+.orfira-v101 .orfira-lesson-settings>div:last-child{justify-self:end!important;text-align:right!important;min-width:270px}
+.orfira-v101 .orfira-lesson-settings>div:last-child .orfira-assign-button{margin-left:auto!important}
+.orfira-v101 .orfira-tool-icon{display:block!important;width:17px!important;height:17px!important;object-fit:contain!important;flex:0 0 17px!important}
+.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>button,.orfira-v101 .orfira-editor-model-box .orfira-stage-model-tools>label{gap:7px!important}
+@media(max-width:900px){.orfira-v101 .orfira-lesson-toolbar{grid-template-columns:minmax(160px,1fr) minmax(170px,1fr)!important}.orfira-v101 .orfira-lesson-save{grid-column:1/-1;justify-self:end!important}}
+@media(max-width:650px){.orfira-v101 .orfira-lesson-toolbar{grid-template-columns:1fr!important}.orfira-v101 .orfira-lesson-save{grid-column:auto;justify-self:start!important}.orfira-v101 .orfira-lesson-settings{grid-template-columns:1fr!important}.orfira-v101 .orfira-lesson-settings>div:last-child{justify-self:start!important;text-align:left!important;min-width:0}.orfira-v101 .orfira-lesson-settings>div:last-child .orfira-assign-button{margin-left:0!important}}
+
+/* v1.0.21: click the logo to expand/collapse; no arrow control. */
+.orfira-v101 .orfira-side-toggle{display:none!important}
+.orfira-v101 button.tBrand.orfira-logo-toggle{appearance:none;border:0;background:transparent;cursor:pointer;padding:0;min-height:44px}
+.orfira-v101 button.tBrand.orfira-logo-toggle:focus-visible{outline:2px solid #4372ef;outline-offset:4px;border-radius:5px}

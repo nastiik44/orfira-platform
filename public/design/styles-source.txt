@@ -1,0 +1,51 @@
+Основная палитра:
+
+Primary_Dark_100 — F0F2F4 (например, фон для плашек на белом фоне)
+Primary_Dark_200 — B4BCCA (обводки, линии)
+Primary_Dark_300 — 7986A0
+Primary_Dark_400 — 4A5468
+Primary_Dark_500 — 16191F
+Primary_Dark_600 — 0B0C0F
+
+Primary_100 — 9FB8F9
+Primary_200 — 5883F5
+Primary_300 — 4372EF
+
+Negative — 9D1D1D
+Negative_Light — F9DBDB
+
+Positive — 3CEC3F
+Positive_Light — E9F5E9
+
+Background — D2DEF6 (фон для платформы под белые плашки)
+
+Text_ Light — FFFFFF
+Text_Dark — 000000
+Text_Gray — 7986A0
+
+
+
+
+Border-radius
+
+radius_xs — 4
+radius_s — 6
+radius_l — 8
+radius_xl — 10
+radius_xxl — 12
+radius_xxxl — 16
+
+
+
+
+Space
+
+Рассчитывается по x*4
+
+
+
+
+Типографика
+
+Шрифт логотипа — Bergamasco Regular
+Основные шрифты — Manrope (regular, medium, semibold)

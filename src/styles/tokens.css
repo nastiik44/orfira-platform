@@ -1,0 +1,9 @@
+/* Единые дизайн-токены Orfira: редактируйте значения для всей платформы. */
+:root{
+ --orfira-dark-100:#F0F2F4; --orfira-dark-200:#B4BCCA; --orfira-dark-300:#7986A0;
+ --orfira-dark-400:#4A5468; --orfira-dark-500:#16191F; --orfira-dark-600:#0B0C0F;
+ --orfira-primary-100:#9FB8F9; --orfira-primary-200:#5883F5; --orfira-primary-300:#4372EF;
+ --orfira-background:#D2DEF6; --orfira-positive:#3CEC3F; --orfira-negative:#9D1D1D;
+ --orfira-r-xs:4px;--orfira-r-s:6px;--orfira-r-l:8px;--orfira-r-xl:10px;--orfira-r-xxl:12px;--orfira-r-xxxl:16px;
+ --orfira-space-unit:4px; --orfira-font:Manrope,Arial,sans-serif;
+}

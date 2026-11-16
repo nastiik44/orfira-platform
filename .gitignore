@@ -1,7 +1,14 @@
 node_modules/
 dist/
+.vite/
 .env
 .env.*
 !.env.example
 .DS_Store
+Thumbs.db
 *.log
+npm-debug.log*
+server/data/*
+!server/data/.gitkeep
+*.local
+coverage/
