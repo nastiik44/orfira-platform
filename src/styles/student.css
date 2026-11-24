@@ -59,3 +59,8 @@
 .sCollapsed .sSidebarBrand .orfira-logo-toggle img{width:45px;height:45px}
 .sApp .sSidebarBrand .orfira-logo-toggle:focus-visible{outline:2px solid #4372ef;outline-offset:3px}
 @media(max-width:760px){.sCollapsed .sSidebarBrand .orfira-logo-toggle{width:100%;height:64px;justify-content:flex-start}.sCollapsed .sSidebarBrand .orfira-logo-toggle img{width:164px;height:64px}}
+
+.sApprovedModel .sModelNote{position:absolute;z-index:2;top:12px;left:12px;right:12px;margin:0;padding:8px 12px;border-radius:8px;background:#16191F;color:#fff;font-size:12px;line-height:1.4;pointer-events:none}
+.sApprovedModel .orfira3d{min-height:0;height:100%}
+.sApprovedDescription{min-width:0}.sVideoCredit{margin:0 0 16px;font-size:13px;line-height:1.5;color:#4A5468}.sVideoCredit p{margin:4px 0 0;color:#7986A0}
+.sApprovedVideo video{display:block}

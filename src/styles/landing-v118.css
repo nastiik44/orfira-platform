@@ -89,3 +89,23 @@
   .orfiraLanding .prices .price:hover::before {animation:none !important;}
   .orfiraLanding .prices .price:hover {transform:none;}
 }
+
+/* Mobile entry: preserve desktop header and use existing design tokens. */
+.header .nav .mobileLogin{display:none}
+@media(max-width:780px){
+ .header .headActions{display:none}
+ .header .nav.open{max-height:calc(100dvh - 72px);overflow-y:auto}
+ .header .nav .mobileLogin{display:block;width:min(100%,320px);min-height:44px;padding:12px 24px;border:0;border-radius:var(--orfira-r-xxl);background:var(--orfira-dark-500);color:#fff;font:600 15px var(--orfira-font)}
+ .authScreen{min-height:100dvh;padding:76px 0 32px;overflow:visible}
+ .authCenter{margin:0}
+ .authInput input{font-size:16px}
+}
+
+.orfiraLanding .heroCopy .heroCtaGroup{max-width:100%;align-items:center;gap:8px;margin-top:40px}
+.orfiraLanding .heroCopy .heroCtaGroup .heroActions{margin:0;justify-content:center;width:100%}
+.orfiraLanding .heroCopy .heroCtaGroup .heroMicro{margin:0!important;text-align:center;white-space:normal;max-width:100%!important}
+.orfiraLanding .fakeVideo{display:flex;flex-direction:column;overflow:hidden}
+.orfiraLanding .fakeVideo .panelTop{flex-shrink:0;position:static}
+.orfiraLanding .orfiraDemoVideo{display:block;width:100%;flex:1;min-height:0;object-fit:contain;background:#0B0C0F}
+.orfiraLanding .heroCopy .heroCtaGroup{display:inline-flex;flex-direction:column;width:max-content}
+.orfiraLanding .heroCopy .heroCtaGroup .heroMicro{width:100%;padding:0}

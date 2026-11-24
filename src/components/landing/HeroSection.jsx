@@ -9,8 +9,8 @@ export default function HeroSection() {
       <div className="heroCopy">
         <h1>Современная <strong>3D-платформа</strong><br/>для обучения ювелирному делу</h1>
         <p>Помогайте ученикам и студентам лучше понимать устройство и технологии создания ювелирных изделий — даже обучаясь онлайн, они разбирают конструкцию и выполняют задания на 3D-модели.</p>
-        <div className="heroActions"><a href="#contact" className="btn dark">Получить консультацию <ArrowRight size={18}/></a></div>
-        <p className="heroMicro">Условия подключения для вашей организации</p>
+        <div className="heroCtaGroup"><div className="heroActions"><a href="#contact" className="btn dark">Получить консультацию <ArrowRight size={18}/></a></div>
+        <p className="heroMicro">Условия подключения для вашей организации</p></div>
       </div>
       <HeroTwinRings/>
     </div>
